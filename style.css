@@ -23,13 +23,13 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 52 ;
+  --hue: 0 ;
   /* HSL color mode */
-  --base-color: hsl(var(--hue)95% 50%);
+  --base-color: hsl(var(--hue)1% 1%);
   --base-color-second: hsl(var(--hue) 80% 72%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
-  --text-color: hsl(0 0% 46%);
+  --text-color: hsl(60, 4%, 5%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0, 0%, 100%);
 
@@ -116,7 +116,7 @@ body {
 }
 
 .section .subtitle {
-  font-size: var(--subtitle-font-size);
+  font-size: var(--base-color);
 }
 
 .section header {
@@ -128,7 +128,7 @@ body {
 }
 
 #header {
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px solid #9e9c9c;
   margin-bottom: 2rem;
   display: flex;
 
@@ -136,25 +136,25 @@ body {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: var(--body-color);
+  background-color: var(--text-color);
   width: 100%;
 }
 
 #header.scroll {
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 12px rgba(148, 69, 69, 0.15);
 }
 
 #header a.title {
-  font: 700 1.07rem var(--text-color);
+  font: 700 1.07rem var(--base-color);
 }
 /*====  LOGO ============================ */
 .logo {
-  font: 700 1.71rem var(--title-font);
-  color: var(--title-color);
+  font: 700 1.71rem var(--body-color);
+  color: var(--body-color);
 }
 
 .logo span {
-  color: var(--base-color);
+  color: var(--body-color);
 }
 
 .logo-alt span {
@@ -219,7 +219,7 @@ nav.show .menu {
   opacity: 1;
   visibility: visible;
 
-  background: var(--body-color);
+  background:white;
 
   height: 100vh;
   width: 100vw;
@@ -295,8 +295,8 @@ nav.show div.icon-close {
   width: 100%;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 36%, 57%, 1),
-    hsla(var(--hue), 65%, 88%, 0.34)
+    hsla(var(--hue), 0%, 57%, 1),
+    hsla(var(--hue), 0%, 88%, 0.34)
   );
  
   position: absolute;
